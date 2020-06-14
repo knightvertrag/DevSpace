@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://knightvertrag:hitsugaya10@devspace-ld3ak.mongodb.net/<dbname>?retryWrites=true&w=majority"
+}

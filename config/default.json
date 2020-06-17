@@ -1,6 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://knightvertrag:hitsugaya10@devspace-ld3ak.mongodb.net/<dbname>?retryWrites=true&w=majority",
-  "jwtSecret": "mysecrettoken",
-  "githubClientId": "78bfd731ef6c9bb3f765",
-  "githubSecret": "3e30d8d7f7c67b4e5b270e549dbb9229a751cb8d"
-}

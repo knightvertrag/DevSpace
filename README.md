@@ -19,4 +19,8 @@
    ```
 
 1. Rename `dummy_default.json` to `default.json` and fill in the default values accordingly.
-1. Start the api server using `npm run server`. It starts on `http://localhost:5000` by default.
+1. The project uses the concurrently package to simultaneously run the api server as well as serve the react frontend. The script to run the project is
+
+```
+npm run dev
+```

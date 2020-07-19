@@ -168,10 +168,10 @@ export const deleteEducation = (id) => async (dispatch) => {
 };
 
 // Delete Account and Profile
-export const deleteAccount = (id) => async (dispatch) => {
-	if (window.confirm("Are you sure? This action is irreversible!")) {
+export const deleteAccount = () => async (dispatch) => {
+	if (window.confirm("Are you sure? This action is IRREVERSIBLE!")) {
 		try {
-			const res = await axios.delete(`/api/profile/${id}`);
+			const res = await axios.delete(`/api/profile`);
 
 			dispatch({
 				type: CLEAR_PROFILE,

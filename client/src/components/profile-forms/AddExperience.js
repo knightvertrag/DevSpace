@@ -75,7 +75,11 @@ const AddExperience = (props) => {
 							type="checkbox"
 							name="current"
 							value={current}
-							onChange={(e) => onChange(e)}
+							checked={current}
+							onChange={(e) => {
+								setFormData({ ...formData, current: !current });
+								toggleDisabled(!toDateDisabled);
+							}}
 						/>{" "}
 						Current Job
 					</p>

@@ -91,6 +91,7 @@ const AddExperience = (props) => {
 						name="to"
 						value={to}
 						onChange={(e) => onChange(e)}
+						disabled={toDateDisabled ? "disabled" : ""}
 					/>
 				</div>
 				<div class="form-group">

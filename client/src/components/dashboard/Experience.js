@@ -39,6 +39,8 @@ const Experience = ({ experience }) => {
 	);
 };
 
-Experience.propTypes = {};
+Experience.propTypes = {
+	experience: PropTypes.array.isRequired,
+};
 
 export default Experience;

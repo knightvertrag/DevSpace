@@ -8,6 +8,8 @@ const AddExperience = (props) => {
 	return <div></div>;
 };
 
-AddExperience.propTypes = {};
+AddExperience.propTypes = {
+	addExperience: PropTypes.func.isRequired,
+};
 
-export default AddExperience;
+export default connect(null, { addExperience })(AddExperience);

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { setAlert } from "./alert";
 
-import { GET_PROFILE, PROFILE_ERROR } from "./types";
+import { GET_PROFILE, PROFILE_ERROR, UPDATE_PROFILE } from "./types";
 
 // Get current users profile
 export const getCurrentProfile = () => async (dispatch) => {
@@ -66,18 +66,16 @@ export const addExperience = (formData, history) => async (dispatch) => {
 			},
 		};
 
-		const res = await axios.put("/api/profile", formData, config);
+		const res = await axios.put("/api/profile/experience", formData, config);
 
 		dispatch({
-			type: GET_PROFILE,
+			type: UPDATE_PROFILE,
 			payload: res.data,
 		});
 
-		dispatch(setAlert(edit ? "Profile Updated" : "Profile Created", "success"));
+		dispatch(setAlert("Experience Added", "success"));
 
-		if (!edit) {
-			history.push("/dashboard");
-		}
+		history.push("/dashboard");
 	} catch (err) {
 		const errors = err.response.data.errors;
 

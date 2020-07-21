@@ -1,5 +1,5 @@
 import React from "react";
-import { link, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const DashboardActions = () => {
 	return (

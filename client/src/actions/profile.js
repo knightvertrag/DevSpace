@@ -3,6 +3,7 @@ import { setAlert } from "./alert";
 
 import {
 	GET_PROFILE,
+	GET_PROFILES,
 	PROFILE_ERROR,
 	UPDATE_PROFILE,
 	CLEAR_PROFILE,
@@ -28,6 +29,7 @@ export const getCurrentProfile = () => async (dispatch) => {
 
 // Get all profiles
 export const getProfiles = () => async (dispatch) => {
+	dispatch({ type: CLEAR_PROFILE });
 	try {
 		const res = await axios.get("/api/profile");
 
